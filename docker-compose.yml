@@ -10,3 +10,9 @@ services:
       - ./todo_api:/todo_api
     command: >
       sh -c "python manage.py runserver 0.0.0.0:8000"
+    environment:
+      - DB_HOST=raja.db.elephantsql.com
+      - DB_PORT=5432
+      - DB_NAME=dbxmyroa
+      - DB_USER=dbxmyroa
+      - DB_PASS=ntAgoq5ArXXXKqaIdPz3wWs9suWnOwdC
