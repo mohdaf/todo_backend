@@ -9,7 +9,7 @@ class Todo(models.Model):
         on_delete=models.CASCADE
     )
     title = models.CharField(max_length=255)
-    description = models.TextField()
+    description = models.TextField(blank=True, default='')
     created_on = models.DateTimeField('Created on')
 
     def __str__(self):
